@@ -42,8 +42,8 @@ This application provides a scalable platform for conversational AI by combining
 ## Project Structure
 
 Chatbot/
-├── backend/
-├── frontend/
+├── backend
+├── frontend
 ├── database_setup.sql
 ├── setup.sh
 └── README.md
@@ -104,9 +104,7 @@ npm run dev
 
 ## Application Access
 
-Open the application in a browser:
-
-http://localhost:5173  
+Open the application in a browser
 
 ---
 
@@ -134,26 +132,6 @@ http://localhost:5173
 
 ---
 
-## Environment Variables
-
-Create a .env file in the backend directory:
-
-OLLAMA_BASE_URL=http://localhost:11434  
-MODEL_NAME=gemma3:4b  
-DATABASE_URL=postgresql://postgres:password@localhost:5432/chatbot  
-SECRET_KEY=your_secret_key  
-
----
-
-## Troubleshooting
-
-- Ensure backend is running on port 8000  
-- Ensure frontend development server is active  
-- Verify Ollama is running and models are installed  
-- Confirm PostgreSQL service is running and accessible  
-
----
-
 ## Future Enhancements
 
 - File upload support in chat  
@@ -162,7 +140,3 @@ SECRET_KEY=your_secret_key
 - Deployment to cloud platforms  
 
 
-
-## Author
-
-Sowmya Sree
