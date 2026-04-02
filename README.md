@@ -79,36 +79,51 @@ psql -U postgres -d chatbot -f database_setup.sql
 ```bash
 cd backend  
 ```
-cd backend  
-python -m venv venv 
-bash source venv/bin/activate  
+```bash
+python -m venv venv  
+```
+```bash
+source venv/bin/activate  
+```
+```bash
 pip install -r requirements.txt  
- cp .env.example .env  
+```
+
 
 ### Run Backend
 
+```bash
 cd backend  
+```
+```bash
 python -m uvicorn main:app --reload  
+```
 
 ---
 
 ### Step 4: Frontend Setup
 
-cd frontend  
-npm install  
+```bash
+cd backend  
+```
+```bash
+npm install
+```
 
 ### Run Frontend
 
-cd frontend  
-npm run dev  
+```bash
+cd backend  
+```
+```bash
+npm run dev 
+```
 
 ---
 
 ## Application Access
 
-Open the application in a browser:
-
-http://localhost:5173  
+Open the application in a browser
 
 ---
 
@@ -118,21 +133,6 @@ http://localhost:5173
 - Password: admin123  
 
 ---
-
-## API Endpoints
-
-### Authentication
-- POST /auth/register  
-- POST /auth/login  
-- GET /auth/me  
-
-### Chat
-- POST /chat  
-- GET /chat/history  
-- GET /models  
-
-### System
-- GET /health  
 
 
 ## Future Enhancements
