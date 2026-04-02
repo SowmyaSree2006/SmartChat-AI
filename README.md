@@ -40,14 +40,14 @@ This application provides a scalable platform for conversational AI by combining
 ---
 
 ## Project Structure
-
+```
 Chatbot/
 ├── backend/
 ├── frontend/
 ├── database_setup.sql
 ├── setup.sh
 └── README.md
-
+```
 ---
 
 ## Prerequisites
@@ -77,11 +77,12 @@ psql -U postgres -d chatbot -f database_setup.sql
 
 ### Step 3: Backend Setup
 ```bash 
-cd backend  ```
-python -m venv venv  
-source venv/bin/activate  
-pip install -r requirements.txt  
-cp .env.example .env  
+1.cd backend  ```
+```bash
+python -m venv venv  ```
+```bash source venv/bin/activate  ```
+```bash pip install -r requirements.txt  ```
+```bash cp .env.example .env  ```
 
 ### Run Backend
 
