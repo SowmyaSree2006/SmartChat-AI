@@ -24,8 +24,8 @@ This application provides a scalable platform for conversational AI by combining
 ## Technology Stack
 
 ### Frontend
-- React with Vite  
-- Tailwind CSS  
+- React
+- CSS  
 
 ### Backend
 - FastAPI  
