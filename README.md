@@ -142,5 +142,4 @@ Open the application in a browser
 
 - File upload support in chat  
 - Voice-based interaction  
-- Admin dashboard for user management  
-- Deployment to cloud platforms  
+- Admin dashboard for user management   
