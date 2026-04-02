@@ -1,125 +1,168 @@
-# SmartChat-AI
-A full stack AI chat application built with FastAPI, React, PostgreSQL, and Ollama. It enables real time conversations with local language models, supports user authentication, and stores chat history for a seamless user experience.
-AI Chat Application
+# SmartChat AI
 
-This project is a full stack AI powered chat application built using FastAPI for the backend, React with Vite for the frontend, PostgreSQL for data storage, and Ollama for integrating local large language models. The application allows users to register, log in, and interact with AI models while maintaining persistent chat history.
+SmartChat AI is a full stack AI-powered chat application built using FastAPI, React, PostgreSQL, and Ollama. The system enables real time interaction with locally hosted large language models while ensuring secure authentication and persistent chat storage.
 
-Features
+---
 
-User authentication with secure login and registration
-Real time chat functionality using AI models
-Persistent storage of chat history in PostgreSQL
-Support for multiple Ollama models
-Responsive user interface built with React and Tailwind CSS
-RESTful API using FastAPI
+## Overview
 
-Technology Stack
+This application provides a scalable platform for conversational AI by combining a high performance backend with a modern frontend interface. It allows users to register, log in, and communicate with AI models while maintaining conversation history for future reference.
 
-Frontend
-React with Vite
-Tailwind CSS
+---
 
-Backend
-FastAPI
-Uvicorn
+## Features
 
-Database
-PostgreSQL
+- User authentication with secure login and registration  
+- Real time chat powered by local AI models  
+- Persistent storage of chat history using PostgreSQL  
+- Support for multiple Ollama models  
+- Responsive and modern user interface  
+- RESTful API design using FastAPI  
 
-AI Integration
-Ollama
+---
 
-Project Structure
+## Technology Stack
 
-Chatbot
-backend contains FastAPI application
-frontend contains React application
-database_setup.sql contains database schema
-setup.sh is used for automated setup
+### Frontend
+- React with Vite  
+- Tailwind CSS  
 
-Prerequisites
+### Backend
+- FastAPI  
+- Uvicorn  
 
-Python version 3.8 or above
-Node.js version 16 or above
-PostgreSQL installed and running
-Ollama installed and running
+### Database
+- PostgreSQL  
 
-Setup Instructions
+### AI Integration
+- Ollama  
 
-Step 1 Start Ollama
+---
 
-ollama serve
-ollama pull gemma3:4b
+## Project Structure
 
-Step 2 Setup Database
+Chatbot/
+├── backend/
+├── frontend/
+├── database_setup.sql
+├── setup.sh
+└── README.md
 
-psql -U postgres -c "CREATE DATABASE chatbot;"
-psql -U postgres -d chatbot -f database_setup.sql
+---
 
-Step 3 Backend Setup
+## Prerequisites
 
-cd backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
+- Python 3.8 or higher  
+- Node.js 16 or higher  
+- PostgreSQL installed and running  
+- Ollama installed and running  
 
-Run Backend
+---
 
-cd backend
-python -m uvicorn main:app --reload
+## Setup Instructions
 
-Step 4 Frontend Setup
+### Step 1: Start Ollama
 
-cd frontend
-npm install
+ollama serve  
+ollama pull gemma3:4b  
 
-Run Frontend
+---
 
-cd frontend
-npm run dev
+### Step 2: Setup Database
 
-Access the Application
+psql -U postgres -c "CREATE DATABASE chatbot;"  
+psql -U postgres -d chatbot -f database_setup.sql  
 
-http://localhost:5173
+---
 
-Default Login Credentials
+### Step 3: Backend Setup
 
-Username admin
-Password admin123
+cd backend  
+python -m venv venv  
+source venv/bin/activate  
+pip install -r requirements.txt  
+cp .env.example .env  
 
-API Endpoints
+### Run Backend
 
-Authentication
-POST /auth/register
-POST /auth/login
-GET /auth/me
+cd backend  
+python -m uvicorn main:app --reload  
 
-Chat
-POST /chat
-GET /chat/history
-GET /models
+---
 
-System
-GET /health
+### Step 4: Frontend Setup
 
-Environment Variables
+cd frontend  
+npm install  
 
-OLLAMA_BASE_URL=http://localhost:11434
-MODEL_NAME=gemma3:4b
-DATABASE_URL=postgresql://postgres:password@localhost:5432/chatbot
-SECRET_KEY=your_secret_key
+### Run Frontend
 
-Troubleshooting
+cd frontend  
+npm run dev  
 
-If the backend is not starting ensure port 8000 is available
-If the frontend is not loading ensure the development server is running
-If models are not visible ensure Ollama is running and a model is downloaded
-If database connection fails ensure PostgreSQL is running properly
+---
 
-Future Improvements
+## Application Access
 
-Add file upload functionality in chat
-Implement voice based interaction
-Develop an admin dashboard
-Deploy the application to cloud platforms
+Open the application in a browser:
+
+http://localhost:5173  
+
+---
+
+## Default Credentials
+
+- Username: admin  
+- Password: admin123  
+
+---
+
+## API Endpoints
+
+### Authentication
+- POST /auth/register  
+- POST /auth/login  
+- GET /auth/me  
+
+### Chat
+- POST /chat  
+- GET /chat/history  
+- GET /models  
+
+### System
+- GET /health  
+
+---
+
+## Environment Variables
+
+Create a .env file in the backend directory:
+
+OLLAMA_BASE_URL=http://localhost:11434  
+MODEL_NAME=gemma3:4b  
+DATABASE_URL=postgresql://postgres:password@localhost:5432/chatbot  
+SECRET_KEY=your_secret_key  
+
+---
+
+## Troubleshooting
+
+- Ensure backend is running on port 8000  
+- Ensure frontend development server is active  
+- Verify Ollama is running and models are installed  
+- Confirm PostgreSQL service is running and accessible  
+
+---
+
+## Future Enhancements
+
+- File upload support in chat  
+- Voice-based interaction  
+- Admin dashboard for user management  
+- Deployment to cloud platforms  
+
+
+
+## Author
+
+Sowmya Sree
