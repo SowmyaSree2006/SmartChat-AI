@@ -63,15 +63,18 @@ Chatbot
 
 ### Step 1: Start Ollama
 
-ollama serve  
-ollama pull gemma3:4b  
+-ollama serve  
+-ollama pull gemma3:4b  
 
 ---
 
 ### Step 2: Setup Database
-
+```bash
 psql -U postgres -c "CREATE DATABASE chatbot;"  
+```
+```bash
 psql -U postgres -d chatbot -f database_setup.sql  
+```
 
 ---
 
